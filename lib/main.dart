@@ -508,9 +508,9 @@ class _MainAppState extends State<MainApp> {
                 ],
                 locale: configProvider.getOverrideLanguage(),
                 supportedLocales: [
-                  Locale("en"),
+                  const Locale("vi"),
                   ...AppLocalizations.supportedLocales
-                      .where((locale) => locale.languageCode != "en")
+                      .where((locale) => locale.languageCode != "vi")
                 ],
                 localeResolutionCallback: (locale, supportedLocales) {
                   final override = configProvider.getOverrideLanguage();
@@ -524,7 +524,7 @@ class _MainAppState extends State<MainApp> {
                     }
                   }
 
-                  return const Locale('en');
+                  return const Locale('vi');
                 },
                 theme: lightTheme,
                 darkTheme: darkTheme,

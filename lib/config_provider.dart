@@ -79,7 +79,7 @@ class Settings {
   static const suppressLargeAttachmentWarning =
       Setting<bool>("suppressLargeAttachmentWarning", false);
   static const overrideLanguage =
-      Setting<Map<String, dynamic>?>("overrideLanguage", null);
+      Setting<Map<String, dynamic>?>("overrideLanguage", {"languageCode": "vi"});
   static const showFlashbacks = Setting<bool>("showFlashbacks", true);
   static const excludeBadDaysFromFlashbacks =
       Setting<bool>("excludeBadDaysFromFlashbacks", false);

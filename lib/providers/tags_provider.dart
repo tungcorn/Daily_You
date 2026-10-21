@@ -9,6 +9,7 @@ import 'package:daily_you/database/entry_tag_dao.dart';
 import 'package:daily_you/database/tag_category_dao.dart';
 import 'package:daily_you/database/tag_dao.dart';
 import 'package:daily_you/database/template_tag_dao.dart';
+import 'package:daily_you/config_provider.dart';
 import 'package:daily_you/l10n/generated/app_localizations.dart';
 import 'package:daily_you/models/tag.dart';
 import 'package:daily_you/models/tag_category.dart';
@@ -308,7 +309,8 @@ class TagsProvider with ChangeNotifier {
   }
 
   Future<void> createDefaultTags() async {
-    final deviceLocale = WidgetsBinding.instance.platformDispatcher.locale;
+    final override = ConfigProvider.instance.getOverrideLanguage();
+    final deviceLocale = override ?? WidgetsBinding.instance.platformDispatcher.locale;
     Locale locale;
     if (AppLocalizations.delegate.isSupported(deviceLocale)) {
       locale = deviceLocale;
@@ -316,7 +318,7 @@ class TagsProvider with ChangeNotifier {
       final langOnly = Locale(deviceLocale.languageCode);
       locale = AppLocalizations.delegate.isSupported(langOnly)
           ? langOnly
-          : const Locale('en');
+          : const Locale('vi');
     }
     final l10n = await AppLocalizations.delegate.load(locale);
     final now = DateTime.now();
