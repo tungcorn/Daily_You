@@ -248,7 +248,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get errorExternalStorageAccessDescription =>
-      'Nếu bạn đang sử dụng bộ nhớ mạng, hãy đảm bảo dịch vụ đang trực tuyến và bạn có kết nối mạng.\\n\\nNếu không, ứng dụng có thể đã mất quyền truy cập thư mục ngoài. Vui lòng vào Cài đặt và chọn lại thư mục ngoài để cấp quyền truy cập.\\n\\nCảnh báo: Các thay đổi sẽ không được đồng bộ cho đến khi bạn khôi phục quyền truy cập vào vị trí bộ nhớ ngoài!';
+      'Nếu bạn đang sử dụng bộ nhớ mạng, hãy đảm bảo dịch vụ đang trực tuyến và bạn có kết nối mạng.\n\nNếu không, ứng dụng có thể đã mất quyền truy cập thư mục ngoài. Vui lòng vào Cài đặt và chọn lại thư mục ngoài để cấp quyền truy cập.\n\nCảnh báo: Các thay đổi sẽ không được đồng bộ cho đến khi bạn khôi phục quyền truy cập vào vị trí bộ nhớ ngoài!';
 
   @override
   String get errorExternalStorageAccessContinue =>
@@ -260,7 +260,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get databaseMigrationErrorDescription =>
-      'Các mục nhật ký của bạn vẫn an toàn nhưng không thể chuyển sang bộ nhớ của ứng dụng.\\n\\nHãy thử lại và báo cáo sự cố nếu lỗi này tiếp tục xảy ra.';
+      'Các mục nhật ký của bạn vẫn an toàn nhưng không thể chuyển sang bộ nhớ của ứng dụng.\n\nHãy thử lại và báo cáo sự cố nếu lỗi này tiếp tục xảy ra.';
 
   @override
   String get databaseMigrationErrorRetry => 'Thử lại';
@@ -462,14 +462,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get templateDefaultSummaryBody =>
-      '### Tổng kết\\n- \\n\\n### Trích dẫn\\n> ';
+      '### Tổng kết\n- \n\n### Trích dẫn\n> ';
 
   @override
   String get templateDefaultReflectionTitle => 'Chiêm nghiệm';
 
   @override
   String get templateDefaultReflectionBody =>
-      '### Điều bạn thích trong ngày hôm nay là gì?\\n- \\n\\n### Điều bạn cảm thấy biết ơn là gì?\\n- \\n\\n### Bạn đang mong chờ điều gì?\\n- ';
+      '### Điều bạn thích trong ngày hôm nay là gì?\n- \n\n### Điều bạn cảm thấy biết ơn là gì?\n- \n\n### Bạn đang mong chờ điều gì?\n- ';
 
   @override
   String get settingsTagsTitle => 'Thẻ';
@@ -664,7 +664,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get welcomeLogBodyText =>
-      '## Chào mừng bạn đến với Daily You\\n\\n> Mỗi ngày đều đáng nhớ, hãy ghi lại từng khoảnh khắc!\\n\\n**Daily You** là ứng dụng miễn phí, [mã nguồn mở](https://github.com/Demizo/Daily_You) và được hỗ trợ bởi cộng đồng. Ứng dụng được xây dựng dựa trên niềm tin rằng nhật ký của bạn phải là của riêng bạn, không phải là một sản phẩm thương mại:\\n\\n- Không quảng cáo\\n- Không khóa tính năng trả phí\\n- Không theo dõi hay thu thập dữ liệu\\n\\nDù bạn đang viết nhật ký, chiêm nghiệm hay chỉ đơn giản ghi lại điều khiến bạn mỉm cười hôm nay, **Daily You** mang đến cho bạn một không gian riêng tư _thực sự thuộc về chính bạn_.';
+      '## Chào mừng bạn đến với Daily You\n\n> Mỗi ngày đều đáng nhớ, hãy ghi lại từng khoảnh khắc!\n\n**Daily You** là ứng dụng miễn phí, [mã nguồn mở](https://github.com/Demizo/Daily_You) và được hỗ trợ bởi cộng đồng. Ứng dụng được xây dựng dựa trên niềm tin rằng nhật ký của bạn phải là của riêng bạn, không phải là một sản phẩm thương mại:\n\n- Không quảng cáo\n- Không khóa tính năng trả phí\n- Không theo dõi hay thu thập dữ liệu\n\nDù bạn đang viết nhật ký, chiêm nghiệm hay chỉ đơn giản ghi lại điều khiến bạn mỉm cười hôm nay, **Daily You** mang đến cho bạn một không gian riêng tư _thực sự thuộc về chính bạn_.';
 
   @override
   String get settingsStorageTitle => 'Bộ nhớ & Đồng bộ';
